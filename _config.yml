@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -16,6 +16,10 @@ defaults:
     values:
       layout: "post"
 
+open_source:
+  - name: googleapis/code-suggester
+    html_url: https://github.com/googleapis/code-suggester
+
 projects:
   sort_by: pushed
   # sort_by options:
@@ -24,18 +28,50 @@ projects:
   limit: 9
   exclude:
     archived: false
-    forks: true
+    forks: false
     projects:
     # - repo-name
+  
+skills:
+  main:
+    - TypeScript
+    - NodeJS
 
-# social_media:
+  worked-extesively-with:
+    - Git
+    - Python3
+    - GitHub
+    - Bash command
+    - Ubuntu
+    - MochaJS
+    - Jest
+    - Yargs
+    - MongoDB
+    - GitHub Actions
+    - GitHub bots
+    - Flask
+  
+  worked-moderately-with:
+    - SQL
+    - Kubernetes
+    - Docker
+    - Java
+    - Golang
+
+  experience-with:
+    - Travis CI
+    - c++
+    - Ruby
+    - Android development
+
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  # linkedin: your_username
+  linkedin: kristie-tom-552492112
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
@@ -47,12 +83,16 @@ projects:
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Linear and non-linear optimization
+    web_url: https://en.wikipedia.org/wiki/Continuous_optimization
+    image_url: https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.wiomax.com%2Fwp-content%2Fuploads%2F2014%2F12%2Fnumerical_optimization.gif&f=1&nofb=1
+  
+  - name: System design
 
-  - name: Web design
+  - name: Environment
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Health Care
+
+  - name: Statistical Performance Analysis
+    web_url: https://www.cs.cmu.edu/~harchol/PerformanceModeling/book.html
+    image_url: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.researchgate.net%2Fprofile%2FAbdelali_El_Bouchti%2Fpublication%2F236124626%2Ffigure%2Fdownload%2Ffig3%2FAS%3A299313700851716%401448373355706%2FState-transition-diagram-of-discrete-time-Markov-chain.png&f=1&nofb=1

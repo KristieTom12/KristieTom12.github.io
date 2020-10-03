@@ -12,7 +12,13 @@
 
 {% if include.metadata %}
   <div class="f4 mb-6">
+
+    {% if user.hireable %}
+      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+      <br>
+    {% endif %}
     {% if user.name %}
+      <br>
       <div class="{{ metadata_styles }}">
         {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
         <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
@@ -47,8 +53,8 @@
         {% endfor %}
       </div>
     {% endif %}
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
+    <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
+      {% include skills.html %}
+    </div>
   </div>
 {% endif %}

@@ -1,0 +1,11 @@
+<div>
+    {% for level in site.skills %}
+    <div>
+        <h3 class="mb-0 text-white">{{ level[0] | capitalize | replace: "-", " "}}</h3>
+        {% for skill in (level[1]..) %}
+            <p class="text-white">{{ skill }} </p>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+<br>
